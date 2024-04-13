@@ -1,19 +1,40 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
+import LinkedIn from '../icons/LinkedIn.astro';
+import GitHub from '../icons/GitHub.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-10">
-			<h1 class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-4">
-				Hey, soy  jcarlos2n 
-				<a href="https://www.linkedin.com" target="_blank" rel="noopener" class="flex justify-center items-center">
-					<Badge>Disponible para trabajar</Badge>
-				</a> 
-			</h1>
-			<h2 class="text-xl opacity-80">+1 año de experiencia. Desarrollador Web, orientado Back-End con Conocimiento Full-Stack. De Málaga, España.</h2>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<div class="flex flex-row gap-x-6">
+				<img class="rounded-full w-12 h-12" src="https://avatars.githubusercontent.com/u/99401784?v=4" alt="jcarlos image">
+				<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+					Hey, soy  Jcarlos2n 
+					<a href="https://www.linkedin.com" target="_blank" rel="noopener" class="flex justify-center items-center">
+						<Badge>Disponible para trabajar</Badge>
+					</a> 
+				</h1>
+			</div>
+		
+			<h2 class="text-2xl opacity-80">
+				+1 año de experiencia. Desarrollador Web, orientado Back-End con Conocimiento Full-Stack. De Málaga, España.
+			</h2>
+			<ul>
+				<li>
+					<a href="https://www.linkedin.com">
+						<LinkedIn class="w-6 h-6"/>
+						LinkedIn
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com">
+						<GitHub class="w-6 h-6"/>
+						GitHub
+					</a>
+				</li>
+			</ul>
 		</section>
 		
 	</main>
