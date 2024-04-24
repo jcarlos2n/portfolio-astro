@@ -1,7 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CodeIcon from "../icons/CodeIcon.astro";
+import ProfileCheck from "../icons/ProfileCheck.astro";
 import Experience from "../components/Experience.astro";
+import AboutMe from "../components/AboutMe.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import BriefCase from "../icons/BriefCase.astro";
 import Hero from "../components/Hero.astro";
@@ -35,5 +37,15 @@ import Projects from "../components/Projects.astro";
 			</h2>
 			<Projects />
 		</SectionContainer>
+
+		<SectionContainer id="sobre-mi">
+			<h2
+			  class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+			>
+			  <ProfileCheck class="size-8" />
+			  Sobre mí
+			</h2>
+			<AboutMe />
+		  </SectionContainer>
 	</main>
 </Layout>
